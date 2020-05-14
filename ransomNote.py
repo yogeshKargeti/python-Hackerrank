@@ -1,6 +1,14 @@
+def check(str1,str2):
+  s=list(str1.split())
+  p=list(str2.split())
+  for i in p:
+    if i in s:
+      s.remove(i)
+    else:
+      return "not possible"
+  return "possible"
+
 str1=input("Enter first: ")
 str2=input("Enter second: ")
-s=list(str1.split())
-p=list(str2.split())
-print(s)
-print(p)
+t=check(str1,str2)
+print(t)
