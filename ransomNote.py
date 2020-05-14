@@ -1,0 +1,6 @@
+str1=input("Enter first: ")
+str2=input("Enter second: ")
+s=list(str1.split())
+p=list(str2.split())
+print(s)
+print(p)
